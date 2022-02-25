@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-pokemon-search-app/static/css/main.2fc358ae.css",
+    "main.js": "/react-pokemon-search-app/static/js/main.cd1bbf1a.js",
+    "static/media/earth.jpg": "/react-pokemon-search-app/static/media/earth.77b903f8986edcd27fc7.jpg",
+    "static/media/hubble.jpg": "/react-pokemon-search-app/static/media/hubble.12ada4c118aa49716d91.jpg",
+    "index.html": "/react-pokemon-search-app/index.html",
+    "main.2fc358ae.css.map": "/react-pokemon-search-app/static/css/main.2fc358ae.css.map",
+    "main.cd1bbf1a.js.map": "/react-pokemon-search-app/static/js/main.cd1bbf1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fc358ae.css",
+    "static/js/main.cd1bbf1a.js"
+  ]
+}
