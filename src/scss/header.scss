@@ -1,0 +1,34 @@
+.header{
+  @mixin header_body{
+    background-color:#000;
+    color:#fff;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+  }
+  font-size:$font-m;
+  justify-content:center;
+  @include header_body;
+
+  &__nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px 20px;
+  }
+
+  &__nav-item{
+    margin:0 10px;
+    &:hover{
+      cursor:pointer;
+      color:pink;
+      opacity:0.5;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    font-size:$font-m;
+    justify-content:right;
+    @include header_body;
+
+  }
+}

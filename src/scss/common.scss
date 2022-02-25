@@ -1,0 +1,80 @@
+$font-color:#333;
+$font-xl:4.5rem;
+$font-l:3rem;
+$font-m:1.5rem;
+$font-s:0.8rem;
+
+
+@mixin types{
+&.Normal{
+      background-color:rgba(255,255,255,0.8);
+    }
+    &.Fire{
+      background-color:rgba(169,32,35,0.8);
+    }
+    &.Water{
+      background-color:rgba(21,82,226,0.8);
+    }
+    &.Electric{
+      background-color:rgba(227,227,43,0.8);
+    }
+    &.Ice{
+      background-color:rgba(134,240,245,0.8);
+    }
+    &.Fighting{
+      background-color:rgba(152,64,36,0.8);
+    }
+    &.Poison{
+      background-color:rgba(94,45,136,0.8);
+    }
+    &.Flying{
+      background-color:rgba(74,103,125,0.8);
+    }
+    &.Psychic{
+      background-color:rgba(164,42,108,0.8);
+    }
+    &.Bug{
+      background-color:rgba(28,75,40,0.8);
+    }
+    &.Rock{
+      background-color:rgba(71,24,12,0.8);
+    }
+    &.Ground{
+      background-color:rgba(47,112,44,0.8);
+    }
+    &.Ghost{
+      background-color:rgba(51,51,107,0.8);
+    }
+    &.Dark{
+      background-color:rgba(90,89,123,0.8);
+    }
+    &.Dragon{
+      background-color:rgba(68,139,149,0.8);
+    }
+    &.Steel{
+      background-color:rgba(95,117,109,0.8);
+    }
+    &.Fairy{
+      background-color:rgba(151,25,68,0.8);
+    }
+    &.Grass{
+      background-color:rgba(108,186,48,0.8);
+    }
+  }
+.common{
+  @mixin app-title{
+    color:#fff;
+  }
+  &__app-title{
+    letter-spacing:1rem;
+    margin-bottom:30px;
+    @include app-title;
+
+  }
+  @media screen and (min-width: 1025px) {
+    letter-spacing:2rem;
+    margin-bottom:40px;
+    @include app-title;
+
+  }
+}

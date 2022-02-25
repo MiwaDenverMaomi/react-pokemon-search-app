@@ -1,0 +1,132 @@
+@import './common.scss';
+
+.card{
+  margin:0 auto;
+  width:80%;
+  padding:0 20px;
+  display:flex;
+  flex-wrap:wrap;
+  color:#fff;
+  @mixin types{
+
+&.Normal{
+      background-color:rgba(255,255,255,0.4);
+    }
+    &.Fire{
+      background-color:rgba(169,32,35,0.8);
+    }
+    &.Water{
+      background-color:rgba(21,82,226,0.8);
+    }
+    &.Electric{
+      background-color:rgba(227,227,43,0.8);
+    }
+    &.Ice{
+      background-color:rgba(134,240,245,0.8);
+    }
+    &.Fighting{
+      background-color:rgba(152,64,36,0.8);
+    }
+    &.Poison{
+      background-color:rgba(94,45,136,0.8);
+    }
+    &.Flying{
+      background-color:rgba(74,103,125,0.8);
+    }
+    &.Psychic{
+      background-color:rgba(164,42,108,0.8);
+    }
+    &.Bug{
+      background-color:rgba(28,75,40,0.8);
+    }
+    &.Rock{
+      background-color:rgba(71,24,12,0.8);
+    }
+    &.Ground{
+      background-color:rgba(47,112,44,0.8);
+    }
+    &.Ghost{
+      background-color:rgba(51,51,107,0.8);
+    }
+    &.Dark{
+      background-color:rgba(90,89,123,0.8);
+    }
+    &.Dragon{
+      background-color:rgba(68,139,149,0.8);
+    }
+    &.Steel{
+      background-color:rgba(95,117,109,0.8);
+    }
+    &.Fairy{
+      background-color:rgba(151,25,68,0.8);
+    }
+    &.Grass{
+      background-color:rgba(108,186,48,0.8);
+    }
+  }
+  &__result{
+    margin:0 auto;
+    color:red;
+    font-size:$font-l;
+
+  }
+  &__desc{
+    margin:0 auto;
+  }
+
+  @mixin container{
+    border-radius:10px;
+    padding:10px;
+    box-sizing:border-box;
+  }
+  &__container{
+    width:80%;
+    height:200px;
+    margin:0 auto 10px;
+    text-align:center;
+    @include container;
+    @include types;
+  }
+  &__img-container{
+    width:100px;
+    height:120px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  &__name{
+    font-size:$font-m;
+    font-weight:bold;
+    margin:5px 0;
+  }
+  &__type{
+    font-size:$font-m;
+  }
+  &__img{
+    width:80%;
+    margin:0 auto;
+  }
+  @media screen and (min-width: 600px) {
+  &__container{
+      width:31%;
+      height:200px;
+      margin:1%;
+      @include container;
+      @include types;
+  }
+   &__img-container{
+    width:80%;
+    margin:0 auto 10px;
+  }
+}
+  @media screen and (min-width: 1025px) {
+    &__container{
+      width: 24%;
+      height:200px;
+      margin:0 1% 1% 0;
+      @include container;
+      @include types;
+    }
+}
+}

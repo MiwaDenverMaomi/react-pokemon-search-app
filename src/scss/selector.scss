@@ -1,0 +1,90 @@
+.selector{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0 auto 30px;
+
+  &__container--l{
+    width:80%;
+    height:40px;
+    position:relative;
+  }
+   &__container--m{
+    width: 80%;
+    // height:60px;
+    position:relative;
+  }
+  @mixin cursor{
+     &:hover{
+      cursor:pointer;
+      opacity:0.8;
+       border:none;
+    }
+  }
+  &__selector{
+    border-radius:15px 0 0 15px;
+    width:80%;
+    height:100%;
+    border:none;
+    padding:5px;
+    @include cursor;
+  }
+    &__submit{
+    width:20%;
+    height:100%;
+    border-radius:0 15px 15px 0;
+    border:none;
+    box-sizing:border-box;
+    padding:0;
+    color:#fff;
+    position:relative;
+    bottom:0.5px;
+    background-color:lightslategrey;
+    &:hover{
+      cursor:pointer;
+      opacity:0.8;
+      border:none;
+    }
+  }
+  @mixin btn{
+    background-color:lightsteelblue;
+    border-radius:2px;
+    border:none;
+
+  }
+  &__btn{
+    width:20%;
+    font-size:$font-m;
+    padding:1%;
+    margin:2%;
+    @include btn;
+    @include cursor;
+  }
+  @media screen and (min-width: 600px) {
+  &__btn{
+    width:15%;
+    @include btn;
+    @include cursor;
+  }
+}
+@media screen and (min-width: 1025px) {
+  &__container--l{
+    width:40%;
+    height:40px;
+    position:relative;
+  }
+   &__container--m{
+    width: 50%;
+    // height:60px;
+    position:relative;
+  }
+  &__btn{
+    width:11%;
+    font-size:$font-m;
+     margin:1%;
+    @include btn;
+    @include cursor;
+  }
+}
+}
